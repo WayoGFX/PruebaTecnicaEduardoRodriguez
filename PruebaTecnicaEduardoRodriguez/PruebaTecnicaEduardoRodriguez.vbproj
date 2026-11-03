@@ -150,6 +150,7 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\BitacoraController.vb" />
     <Compile Include="Controllers\ClientesController.vb" />
     <Compile Include="Controllers\LoginController.vb" />
     <Compile Include="Global.asax.vb">
@@ -176,6 +177,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Services\BitacoraService.vb" />
     <Compile Include="Services\ClienteService.vb" />
     <Compile Include="Services\NegocioException.vb" />
     <Compile Include="Services\UsuarioService.vb" />
@@ -285,6 +287,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Bitacora\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

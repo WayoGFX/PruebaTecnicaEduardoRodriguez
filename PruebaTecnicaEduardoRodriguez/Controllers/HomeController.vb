@@ -6,13 +6,13 @@
     End Function
 
     Function About() As ActionResult
-        ViewData("Message") = "Your application description page."
+        ViewData("Message") = "Prueba Técnica Fundamicro"
 
         Return View()
     End Function
 
     Function Contact() As ActionResult
-        ViewData("Message") = "Your contact page."
+        ViewData("Message") = "Eduardo Rodríguez - Prueba Técnica Fundamicro"
 
         Return View()
     End Function
