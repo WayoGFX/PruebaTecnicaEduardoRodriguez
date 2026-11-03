@@ -15,8 +15,8 @@ Public Class Cliente
     <StringLength(150, ErrorMessage:="Máximo 150 caracteres")>
     Public Property Email As String
 
-    <StringLength(20, ErrorMessage:="Máximo 8 caracteres")>
-    <RegularExpression("^[0-9+\-\s]*$", ErrorMessage:="Solo números, espacios, + y -")>
+    <StringLength(8, ErrorMessage:="Máximo 8 caracteres")>
+    <RegularExpression("^[0-9+\-\s]*$", ErrorMessage:="Solo números, espacios, +")>
     Public Property Telefono As String
 
     <StringLength(250, ErrorMessage:="Máximo 250 caracteres")>

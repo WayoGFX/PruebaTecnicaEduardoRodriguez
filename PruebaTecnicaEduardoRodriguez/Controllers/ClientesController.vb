@@ -12,7 +12,7 @@ Public Class ClientesController
             lista = _clienteService.ObtenerTodos()
         Catch ex As Exception
             System.Diagnostics.Trace.TraceError(ex.ToString())
-            ViewBag.Error = "No se pudo cargar la lista de clientes."
+            ViewBag.Error = "No se pudo cargar la lista de clientes"
         End Try
 
         Return View(lista)
