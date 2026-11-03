@@ -261,6 +261,8 @@
     <Content Include="Views\Clientes\Editar.vbhtml" />
     <Content Include="Views\Clientes\Eliminar.vbhtml" />
     <Content Include="Views\Bitacora\Index.vbhtml" />
+    <Content Include="Views\Error\General.vbhtml" />
+    <Content Include="Views\Error\NoEncontrado.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
