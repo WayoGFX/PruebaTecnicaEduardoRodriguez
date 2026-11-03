@@ -152,6 +152,7 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\BitacoraController.vb" />
     <Compile Include="Controllers\ClientesController.vb" />
+    <Compile Include="Controllers\ErrorController.vb" />
     <Compile Include="Controllers\LoginController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +260,7 @@
     <Content Include="Views\Clientes\Crear.vbhtml" />
     <Content Include="Views\Clientes\Editar.vbhtml" />
     <Content Include="Views\Clientes\Eliminar.vbhtml" />
+    <Content Include="Views\Bitacora\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -278,8 +280,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Views\_ViewStart.vbhtml" />
-    <Content Include="Views\Home\About.vbhtml" />
-    <Content Include="Views\Home\Contact.vbhtml" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
@@ -287,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Bitacora\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

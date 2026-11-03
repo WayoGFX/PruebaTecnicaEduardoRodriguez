@@ -19,8 +19,7 @@
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Clientes", "Index", "Clientes", Nothing, New With {.class = "nav-link"})</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home", New With {.area = ""}, New With {.class = "nav-link"})</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home", New With {.area = ""}, New With {.class = "nav-link"})</li>
+                    <li>@Html.ActionLink("Bitácora", "Index", "Bitacora", Nothing, New With {.class = "nav-link"})</li>
                     <li>@Html.Partial("_LoginPartial")</li>
                 </ul>
             </div>
