@@ -150,9 +150,12 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\ClientesController.vb" />
+    <Compile Include="Controllers\LoginController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\PasswordHelper.vb" />
     <Compile Include="Models\Bitacora.vb" />
     <Compile Include="Models\Cliente.vb" />
     <Compile Include="Models\LoginModel.vb" />
@@ -173,6 +176,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Services\ClienteService.vb" />
+    <Compile Include="Services\NegocioException.vb" />
+    <Compile Include="Services\UsuarioService.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -244,6 +250,13 @@
     <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="Views\Login\Login.vbhtml" />
+    <Content Include="Views\Shared\_LoginPartial.vbhtml" />
+    <Content Include="Views\Clientes\Index.vbhtml" />
+    <Content Include="Views\Clientes\_Form.vbhtml" />
+    <Content Include="Views\Clientes\Crear.vbhtml" />
+    <Content Include="Views\Clientes\Editar.vbhtml" />
+    <Content Include="Views\Clientes\Eliminar.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -272,8 +285,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
