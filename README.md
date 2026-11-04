@@ -18,8 +18,8 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
 
 ## Cómo ejecutarlo
 
-1. **Crear la base de datos:** abre `ScriptSQLPruebaTecnica.sql` en SSMS y ejecútalo completo. Crea la base `PruebaTecnicaDb` con sus tablas `Usuarios`, `Clientes` y `Bitacora`, y el usuario de prueba. Debe ejecutarse en una instancia donde la base aún no exista
-2. **Ajustar la conexión:** en el `Web.config` del proyecto, cambia el `Data Source` de la cadena `PruebaTecnicaDb` por el nombre de tu instancia de SQL Server, por ejemplo:
+1. **Crear la base de datos:** se debe abrir el `ScriptSQLPruebaTecnica.sql` en SSMS y ejecutarlo completo para crear la base de datos `PruebaTecnicaDb` con sus tablas `Usuarios`, `Clientes` y `Bitacora`, y el usuario de prueba. Debe ejecutarse en una instancia donde la base de datos aún no existe
+2. **Ajustar la conexión:** en el `Web.config` del proyecto, se debe cambiar el `Data Source` de la cadena `PruebaTecnicaDb` por el nombre de la instancia de SQL Server que tenga en su computadora, por ejemplo:
 
    ```xml
    <add name="PruebaTecnicaDb"
@@ -27,8 +27,8 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
         providerName="System.Data.SqlClient" />
    ```
 
-   La cadena usa autenticación de Windows (`Integrated Security=True`). Si usas autenticación de SQL Server, reemplaza esa parte por `User Id=usuario;Password=contraseña`
-3. **Ejecutar:** abre la solución en Visual Studio, que restaura los paquetes NuGet automáticamente al compilar, y presiona **F5**
+   La cadena usa autenticación de Windows (`Integrated Security=True`). Si tiene autenticación de SQL Server en su computadora, se debe reemplazar esa parte por `User Id=usuario;Password=contraseña`
+3. **Ejecutar:** Para ejecutar solo se debe abrir la solución en Visual Studio, restaurar los paquetes NuGet los cuales se restauran automáticamente al compilar, y presiona **F5**
 
 ## Usuario de prueba
 
@@ -36,7 +36,7 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
 |---------|-----------------|
 | `admin` | `PruebaTecnica` |
 
-En la base de datos la contraseña se guarda como hash; en el login se escribe la contraseña normal
+En la base de datos la contraseña se guarda como hash, en el login se escribe la contraseña normal
 
 ## Base de datos
 
