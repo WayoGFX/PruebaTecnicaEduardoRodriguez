@@ -5,7 +5,7 @@ Imports System.Data.SqlClient
 Public Class UsuarioService
 
     Private ReadOnly _connectionString As String =
-        ConfigurationManager.ConnectionStrings("GestionClientesDB").ConnectionString
+        ConfigurationManager.ConnectionStrings("PruebaTecnicaDb").ConnectionString
 
     'Buscar usuario por nombre
     Public Function ObtenerPorNombre(nombreUsuario As String) As Usuario

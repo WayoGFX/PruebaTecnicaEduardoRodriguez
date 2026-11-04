@@ -3,14 +3,14 @@ Imports System.Data.SqlClient
 
 Public Class BitacoraService
     Private ReadOnly _connectionString As String =
-        ConfigurationManager.ConnectionStrings("GestionClientesDB").ConnectionString
+        ConfigurationManager.ConnectionStrings("PruebaTecnicaDb").ConnectionString
 
-    'Solo 200 movimientos para optimizar la petición
+    'Solo 100 movimientos para optimizar la petición
     Public Function ObtenerRecientes() As List(Of Bitacora)
         Dim lista As New List(Of Bitacora)()
 
         Const sql As String =
-            "SELECT TOP 200 Id, Accion, ClienteId, FechaHora, UsuarioId, NombreUsuario, Detalle " &
+            "SELECT TOP 100 Id, Accion, ClienteId, FechaHora, UsuarioId, NombreUsuario, Detalle " &
             "FROM Bitacora ORDER BY FechaHora DESC, Id DESC"
 
         Using conn As New SqlConnection(_connectionString)

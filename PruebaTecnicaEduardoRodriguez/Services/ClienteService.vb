@@ -5,7 +5,7 @@ Imports System.Data.SqlClient
 Public Class ClienteService
 
     Private ReadOnly _connectionString As String =
-        ConfigurationManager.ConnectionStrings("GestionClientesDB").ConnectionString
+        ConfigurationManager.ConnectionStrings("PruebaTecnicaDb").ConnectionString
 
     Private Const ColumnasCliente As String =
         "Id, Nombre, Apellido, Email, Telefono, Direccion, FechaCreacion"
