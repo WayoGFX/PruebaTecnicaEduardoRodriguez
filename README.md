@@ -28,8 +28,8 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
    ```
 
    La cadena usa autenticación de Windows (`Integrated Security=True`). Si tiene autenticación de SQL Server en su computadora, se debe reemplazar esa parte por `User Id=usuario;Password=contraseña`
-3. **Ejecutar:** abre la solución en Visual Studio. Si es la primera vez que se compila, ve a **Compilar -> Limpiar solución**, luego **Recompilar solución** (restaura los paquetes NuGet automáticamente) y presiona **F5** (al no estar restaurados los paquetes ni recompilada y limpia la solución puede dar error porque necesita estos archivos para arrancar)
-Si al abrir la aplicación aparece "Runtime Error" en la primera ejecución, repite Limpiar solución y Recompilar solución, y vuelve a ejecutar
+3. **Ejecutar:** abre la solución en Visual Studio, restaura los paquetes NuGet (clic derecho en la solución -> **Restaurar paquetes NuGet**), luego usa **Compilar -> Limpiar solución** y **Recompilar solución**. Después presiona **F5**
+   Si aparece un error sobre `bin\roslyn\vbc.exe`, cierra y vuelve a abrir la solución y repite esos pasos
 
 
 ## Usuario de prueba
