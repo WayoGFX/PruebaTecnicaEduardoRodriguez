@@ -28,7 +28,7 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
    ```
 
    La cadena usa autenticación de Windows (`Integrated Security=True`). Si tiene autenticación de SQL Server en su computadora, se debe reemplazar esa parte por `User Id=usuario;Password=contraseña`
-3. **Ejecutar:** Para ejecutar solo se debe abrir la solución en Visual Studio, restaurar los paquetes NuGet los cuales se restauran automáticamente al compilar, y presiona **F5**
+3. **Ejecutar:** abre la solución en Visual Studio, haz clic derecho en la solución y selecciona **Recompilar solución** (este restaura los paquetes NuGet automáticamente) y presiona **F5** (al no estar restaurados los paquetes ni recompilada la solución dará error porque necesita estos archivos para arrancar)
 
 ## Usuario de prueba
 
