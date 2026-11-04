@@ -19,10 +19,10 @@ Aplicación web para gestionar clientes, desarrollada en ASP.NET MVC 5 con VB.NET
 ## Cómo ejecutarlo
 
 1. **Crear la base de datos:** abre `ScriptSQLPruebaTecnica.sql` en SSMS y ejecútalo completo. Crea la base `PruebaTecnicaDb` con sus tablas `Usuarios`, `Clientes` y `Bitacora`, y el usuario de prueba. Debe ejecutarse en una instancia donde la base aún no exista
-2. **Ajustar la conexión:** en el `Web.config` del proyecto, cambia el `Data Source` de la cadena `GestionClientesDB` por el nombre de tu instancia de SQL Server, por ejemplo:
+2. **Ajustar la conexión:** en el `Web.config` del proyecto, cambia el `Data Source` de la cadena `PruebaTecnicaDb` por el nombre de tu instancia de SQL Server, por ejemplo:
 
    ```xml
-   <add name="GestionClientesDB"
+   <add name="PruebaTecnicaDb"
         connectionString="Data Source=SERVIDOR\INSTANCIA;Initial Catalog=PruebaTecnicaDb;Integrated Security=True;TrustServerCertificate=True"
         providerName="System.Data.SqlClient" />
    ```
