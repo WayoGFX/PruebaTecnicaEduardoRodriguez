@@ -51,7 +51,7 @@
     </main>
     <footer class="border-top bg-white">
         <div class="container py-3">
-            <p class="text-secondary small mb-0">&copy; @DateTime.Now.Year - Eduardo Rodríguez, Prueba Técnica Fundamicro</p>
+            <p class="text-secondary small mb-0">&copy; @DateTime.Now.Year - Eduardo Rodríguez, Prueba Técnica Fundamicro </p>
         </div>
     </footer>
     @Scripts.Render("~/bundles/jquery")
